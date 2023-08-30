@@ -1,0 +1,9 @@
+-name: Install redis component
+ hosts: redis
+ become: yes
+ tasks:
+ -name: Installing redis rpm packages
+  #ansible.builtin.shell: "curl -sL https://rpms.remirepo.net/enterprise/remi-release-8.rpm | bash"
+  ansible.builtin.yum:
+    name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+    state: installed

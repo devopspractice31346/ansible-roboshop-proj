@@ -6,3 +6,6 @@ catalogue.testdevopsconcepts.online
 
 [web]
 web.testdevopsconcepts.online
+
+[redis]
+redis.testdevopsconcepts.online
